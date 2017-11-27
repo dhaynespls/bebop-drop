@@ -2,8 +2,8 @@
 
 Launch a MITM attack on the controller and the drone.
 
-```
-virtualenv -p python3 venv
-source venv/bin/activate
-pip install -r requirements.txt
+Ensure `dsniff` and the `mitmproxy` binary can be found on your system.
+
+```sh
+sudo ./drop.sh
 ```
