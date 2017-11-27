@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Source: https://gist.github.com/jkullick/5fef12be74ffbfc6f8e5d9f6f9194879
+
 export INTERFACE=
 export CLIENT_IP=
 export DRONE_IP=
